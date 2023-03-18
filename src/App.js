@@ -1,7 +1,8 @@
-import React, { useRef, useState } from 'react';
-import style from './App.module.css';
-import PresnolDetails from './Component/PresnolDetails/PresnolDetails';
-// import { BsFillTelephoneFill } from 'react-icons/bs';
+import React, { useRef, useState } from "react";
+import style from "./App.module.css";
+import PresnolDetails from "./Component/PresnolDetails/PresnolDetails";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { HiAtSymbol } from "react-icons/hi";
 
 export default function App() {
   const nameRef = useRef();
@@ -38,23 +39,25 @@ export default function App() {
             marryRef={marryRef}
           />
         ) : (
-          ''
+          ""
         )}
       </div>
 
       <div className={style.readSec}>
         <div className={style.topSec}>
-          <h1 ref={nameRef}></h1>
-         <h2 ref={jobRef}></h2>
+          <h1 ref={nameRef}>.</h1>
+          <h2 ref={jobRef}>.</h2>
+          {!emailRef ? <HiAtSymbol /> : ""}
           <p ref={emailRef}></p>
+          <BsFillTelephoneFill />
           <p ref={contRef}></p>
           <p ref={addRef}></p>
           <div className={style.subSec}>
-          <p ref={dobRef}></p>
-          <p ref={genderRef}></p>
-          <p ref={nationRef}></p>
-          <p ref={marryRef}></p>
-         </div>
+            <p ref={dobRef}></p>
+            <p ref={genderRef}></p>
+            <p ref={nationRef}></p>
+            <p ref={marryRef}></p>
+          </div>
           <p ref={linkedinRef}></p>
         </div>
       </div>
