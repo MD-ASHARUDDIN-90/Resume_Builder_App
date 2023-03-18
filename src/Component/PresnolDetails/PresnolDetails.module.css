@@ -1,0 +1,22 @@
+.presnol{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 80%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.labelDiv{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.presnol label{
+  font-size: 1.5em;
+}
+.presnol input{
+  width: 20vw;
+  height: 5vh;
+  font-size: 1.3em;
+}
